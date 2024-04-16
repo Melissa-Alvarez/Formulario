@@ -3,11 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Formulário</h1>
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name">
+    <div class="form1">
+        
+        <h2>FORMULÁRIO DE CONCESSÃO DE CRÉDITO PARA PRODUTOR RURAL - PF</h2>
+        <p>
+            <div class="espacoTitulo">1. DADOS PESSOAIS</div>
+            <div>PROCEDIMENTOS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>1.1<input type="text" placeholder="NOME COMPLETO" required></p>
+                </td>
+                <td>
+                    <p>1.2<input type="number" placeholder="CPF" required></p>
+                </td>
+                <td>
+                    <p>1.3<input type="number" placeholder="RG/ CNH" required></p>
+                </td>
+                <td>
+                    <p>Solicitar cópia dos documentos de identificação e anexar a este cadastro</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.4 <input type="text" placeholder="ENDEREÇO" required></p>
+                </td>
+                <td style="background-color: lightgrey;">
+                    <p></p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>Solicitar cópia de um comprovante de residencia para anexo</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.5 <input type="number" placeholder="TELEFONE" required></p>
+                </td>
+                <td>
+                    <p>1.6 <input type="email" placeholder="E-MAIL" required></p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <div>2.INFORMAÇÕES BANCÁRIAS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>2.1 COMPROVANTE DE RENDA</p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>Anexar cópia de comprovante de renda assinado pelo produtor</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2.2 POSSUI FINANCIAMENTO EM ANDAMENTO:</p>
+                </td>
+                <td class="center">
+                    <label>
+                        <input type="radio" name="simnao" value="sim"> Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="simnao" value="nao"> Não
+                    </label>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2.2.1 SE POSSUI FINANCIAMENTOS ATIVOS, QUANTOS:</p>
+                </td>
+                <td class="center">
+                    <label>
+                        <input type="radio" name="opcao" value="sim"> 1
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao" value="nao"> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao" value="sim"> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="opcao" value="sim"> 4+
+                    </label>
+                </td>
+                <td>
+                    <p></p>
+                </td>
+                <td>
+                    <p>Analisar a quantidade de financiamentos ativos e histórico de pagamento dos mesmos</p>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
 </body>
 </html>
