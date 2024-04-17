@@ -5,7 +5,13 @@
 
 .espacoTitulo{
     margin-right: 859px;
+    font-weight: bold;
 }
+.h2form1{
+    padding-top: 20px;
+    margin-left: 16%;
+}
+
 .form1 div {
     display: inline-block;
 }
@@ -24,11 +30,11 @@ table{
 }
 
 table tr td:nth-child(1) {
-    width: 350px;
+    width: 320px;
 }
 
 table tr td:nth-child(2) {
-    width: 250px;
+    width: 290px;
 }
 
 table tr td:nth-child(3) {
@@ -41,4 +47,48 @@ table tr td:nth-child(4) {
 
 .center{
     text-align: center;
+}
+
+.vazio{
+    background-color: lightgray;
+}
+
+.SPC{
+    float: right;
+    margin-right: 40px;
+}
+
+.aumentar{
+    width: 260px;
+}
+
+#h2form2{
+    margin-left: 18%;
+}
+
+.title2{
+    margin-top: 100px;
+}
+
+.form2 {
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+}
+
+.form2 div {
+    display: inline-block;
+}
+
+.fim{
+    margin-bottom: 60px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.miniTitulo{
+    font-weight: bold;
 }

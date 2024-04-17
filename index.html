@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="form1">
-        
-        <h2>FORMULÁRIO DE CONCESSÃO DE CRÉDITO PARA PRODUTOR RURAL - PF</h2>
+
+        <h2 class="h2form1">FORMULÁRIO DE CONCESSÃO DE CRÉDITO PARA PRODUTOR RURAL - PF</h2>
         <p>
-            <div class="espacoTitulo">1. DADOS PESSOAIS</div>
-            <div>PROCEDIMENTOS</div>
+        <div class="espacoTitulo" class="miniTitulo">1. DADOS PESSOAIS</div>
+        <div class="miniTitulo">PROCEDIMENTOS</div>
         </p>
         <table border="1">
             <tr>
@@ -23,7 +25,7 @@
                     <p>1.2<input type="number" placeholder="CPF" required></p>
                 </td>
                 <td>
-                    <p>1.3<input type="number" placeholder="RG/ CNH" required></p>
+                    <p>1.3<input type="number" placeholder="RG/CNH" required></p>
                 </td>
                 <td>
                     <p>Solicitar cópia dos documentos de identificação e anexar a este cadastro</p>
@@ -31,12 +33,12 @@
             </tr>
             <tr>
                 <td>
-                    <p>1.4 <input type="text" placeholder="ENDEREÇO" required></p>
+                    <p>1.4<input type="text" placeholder="ENDEREÇO" required></p>
                 </td>
-                <td style="background-color: lightgrey;">
+                <td class="vazio">
                     <p></p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
                 <td>
@@ -45,31 +47,31 @@
             </tr>
             <tr>
                 <td>
-                    <p>1.5 <input type="number" placeholder="TELEFONE" required></p>
+                    <p>1.5<input type="number" placeholder="TELEFONE" required></p>
                 </td>
                 <td>
-                    <p>1.6 <input type="email" placeholder="E-MAIL" required></p>
+                    <p>1.6<input type="email" placeholder="E-MAIL" required></p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
             </tr>
         </table>
         <p>
-            <div>2.INFORMAÇÕES BANCÁRIAS</div>
+        <div class="miniTitulo">2. INFORMAÇÕES BANCÁRIAS</div>
         </p>
         <table border="1">
             <tr>
                 <td>
                     <p>2.1 COMPROVANTE DE RENDA</p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
                 <td>
@@ -81,17 +83,13 @@
                     <p>2.2 POSSUI FINANCIAMENTO EM ANDAMENTO:</p>
                 </td>
                 <td class="center">
-                    <label>
-                        <input type="radio" name="simnao" value="sim"> Sim
-                    </label>
-                    <label>
-                        <input type="radio" name="simnao" value="nao"> Não
-                    </label>
+                    <input type="radio" name="simnao" value="sim"> Sim
+                    <input type="radio" name="simnao" value="nao"> Não
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
             </tr>
@@ -100,29 +98,330 @@
                     <p>2.2.1 SE POSSUI FINANCIAMENTOS ATIVOS, QUANTOS:</p>
                 </td>
                 <td class="center">
-                    <label>
-                        <input type="radio" name="opcao" value="sim"> 1
-                    </label>
-                    <label>
-                        <input type="radio" name="opcao" value="nao"> 2
-                    </label>
-                    <label>
-                        <input type="radio" name="opcao" value="sim"> 3
-                    </label>
-                    <label>
-                        <input type="radio" name="opcao" value="sim"> 4+
-                    </label>
+                    <input type="radio" name="opcao" value="sim"> 1
+                    <input type="radio" name="opcao" value="nao"> 2
+                    <input type="radio" name="opcao" value="sim"> 3
+                    <input type="radio" name="opcao" value="sim"> 4+
                 </td>
-                <td>
+                <td class="vazio">
                     <p></p>
                 </td>
                 <td>
                     <p>Analisar a quantidade de financiamentos ativos e histórico de pagamento dos mesmos</p>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <p>2.3 ÍNDICE DE INDIVIDAMENTO</p>
+                </td>
+                <td class="center">
+                    <input type="number" placeholder="0,00%" required>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Calcular e inserir no cadastro o índice de individamento </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2.4 JÁ UTILIZOU CPR:</p>
+                </td>
+                <td class="center">
+                    <input type="radio" name="cpr" value="sim"> Sim
+                    <input type="radio" name="cpr" value="nao"> Não
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Caso tenha utilizado CPR, analisar histórico de pagamento e inadimplência </p>
+                </td>
+            </tr>
         </table>
-
-
+        <p>
+            <div class="miniTitulo">3. ÓRGÃOS DE PROTEÇÃO</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td class="center">
+                    <p>3.1 SPC </p>
+                </td>
+                <td class="center">
+                    <p>3.2 SERASA</p>
+                </td>
+                <td class="center">
+                    <p>3.3 BOA VISTA</p>
+                </td>
+                <td>
+                    <p>Obter informações detalhadas sobre histórico de crédito, consultar sua pontuação de Score e
+                        possíveis inadimplências nos principais orgãos de proteção (SPC, SERASA e BOA VISTA). </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3.4 ESTÁ INADIMPLENTE: </p>
+                </td>
+                <td class="center">
+                    <input type="radio" name="3.4" value="sim"> Sim
+                    <input type="radio" name="3.4" value="nao"> Não
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3.5 NÍVEL DE SCORE DE CRÉDITO: </p>
+                </td>
+                <td class="center">
+                    <input type="radio" name="3.5" value="baixo"> Baixo 0-499<br>
+                    <input type="radio" name="3.5" value="medio"> Médio 500-799<br>
+                    <input type="radio" name="3.5" value="alto"> Alto 800-1000
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Atualizar o nível do score no sistema a cada nova solicitações de crédito. </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <div class="miniTitulo">4. PATRIMÔNIO</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>4.1 GARANTIAS</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>(Se possuir) pedir cópia de documentos que comprovem que há bens registrados em seu nome e anexar cópias ao cadastro. (escrituta de imóveis, propriedade rural, documentos de veículos, tratores, colheitaderas e maquinários). </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <div class="miniTitulo">5. INFORMAÇÕES ADICIONAIS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>5.1<input type="text" class="aumentar" placeholder="ÁREA TOTAL DE PRODUÇÃO" required></p>
+                </td>
+                <td>
+                    <p>5.2<input type="text" class="aumentar" placeholder="PRODUÇÃO ANUAL ESTIMADA" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>5.3<input type="text" class="aumentar" placeholder="PRINCIPAIS CULTURAS DO PRODUTOR" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Deixar registrado no sistema as principais culturas que o produtor trabalha </p>
+                </td>
+            </tr>
+        </table>
+        <p>(espaço para anexar os documentos digitalizados)</p>
+        <input type="file">
+    </div>
+    <div class="form2">
+        <h2 class="title2" id="h2form2">FORMULARIO DE CONCESSÃO DE CRÉDITO COOPERATIVA - PJ</h2>
+        <p>
+            <div class="espacoTitulo" class="miniTitulo">1. DADOS DA EMPRESA</div>
+            <div class="miniTitulo">PROCEDIMENTOS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>1.1<input type="text" placeholder="NOME" required></p>
+                </td>
+                <td>
+                    <p>1.2<input type="number" placeholder="CNPJ" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Solicitar cópia do CNPJ da empresa e anexar a este cadastro </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.3<input type="text" placeholder="ENDEREÇO" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Solicitar cópia de um comprovante de endereço para anexo </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.4<input type="number" placeholder="TELEFONE" required></p>
+                </td>
+                <td>
+                    <p>1.5<input type="email" placeholder="E-MAIL" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.6 ESTATUTO SOCIAL DA COOPERATIVA</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Anexar cópia autênticada do estatuto social no sistema</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1.7 PRINCIPAIS ATIVIDADES</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Anexar junto ao cadastro um Relatório detalhado de Atividades e Resultados da cooperativa</p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <div class="miniTitulo">2. DADOS FINANCEIROS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>2.1 DEMONSTRATIVOS FINANCEIROS</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Exigir Balanço Patrimonial e Demonstrativos financeiros para anexar cópias e fazer a análise dos mesmos </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2.2 FAZ USO DA CPR:</p>
+                </td>
+                <td class="center">
+                    <input type="radio" name="2.2" value="sim"> Sim
+                    <input type="radio" name="2.2" value="nao"> Não
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Verificar a existência de parcerias com produtores rurais e histórico de uso da CPR </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2.3 ESTÁ INADIMPLENTE:</p>
+                </td>
+                <td class="center">
+                    <input type="radio" name="2.3" value="sim"> Sim
+                    <input type="radio" name="2.3" value="nao"> Não
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Analisar histórico de pagamentos e possíveis inadimplências </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <div class="miniTitulo">3. INFORMAÇÕES ADICIONAIS</div>
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>3.1<input type="number" placeholder="Nº DE COOPERADOS" required></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3.2 POLÍTICA INTERNA DE CRÉDITOS</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Analisar a política interna de crédito da cooperativa para medir a possibilidade de inadimplência de seus clientes mediante os dados solicitados para a concessão do crédito</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3.3 REGULARIDADE FISCAL</p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td class="vazio">
+                    <p></p>
+                </td>
+                <td>
+                    <p>Coletar comprovantes de regularidade fiscal para anexo</p>
+                </td>
+            </tr>
+        </table>
+        <p>(espaço para anexar os documentos digitalizados)</p>
+        <input type="file" class="fim">
     </div>
 </body>
 </html>
